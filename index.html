@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Final Project</title>
+</head>
+<body style="background-color: rgb(23, 3, 69); color: white;">
+    <table border="1" width="100%" cellpadding="15" cellspacing="0">
+        <tr>
+            <td width="30%">
+                <img src="data:image/png;base64,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" alt="Tap Academy" width="90" height="50">
+                <h3>Website built by Harshitha</h3>
+            </td>
+            <td style="text-align: center;" text-spacing="10px;">
+                <a href="#about">About</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="#WhyHtml">Why HTML ? </a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="#projects">Projects </a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="#trainer">Trainer </a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="#Website">Website  </a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="#location">Location  </a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="#contact">Contact </a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            </td>
+        </tr>
+    </table>
+        <br><br><br>
+        <center>
+            <h2 style="text-align: center;">🚀 EDTECH EXCELLENCE</h2>
+            <h1 style="text-align: center;">Master HTML With TAP Academy</h1>
+            <p style="text-align: center;">Begin your web development journey with the foundation of the internet.<br>
+            Learn HTML from Harshit Sir and build real-world projects.</p>
+            <br>
+            <a href="#projects">[View my Projects]</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         
+            <a href="#WhyHtml">[Why HTML?]</a>
+        </center>
+        <br><br>
+        <center>
+            <table border="2" cellpadding="20" cellspacing="5" width="80%">
+            <tr>
+                <th width="33%">
+                    <h2>6+</h2>
+                    <small>PROJECTS BUILT</small>
+                </th>
+                <th width="33%">
+                    <h2>100%</h2>
+                    <small>PURE HTML</small>
+                </th>
+                <th width="33%">
+                    <h2>∞</h2>
+                    <small>POSSIBILITIES</small>
+                </th>
+            </tr>
+        </table>
+        </center>  
+        
+        <br><br>
+        <hr width="80%">
+        <br><br>
+
+        <!----------about section-------->
+        <a name="about"></a>
+        <center>
+            <h4>---------ABOUT THE COURSE-----------</h4>
+            <h1>What is HTML?</h1>
+            <table width="80%" cellspacing="0" border="1" cellpadding="20">
+                <tr width="30%" align="center" valign="middle">
+                    <td>
+                        <h1>🌐</h1>
+                        <h1>&lt;/&gt;</h1>
+                    </td>
+                    <td width="70%" valign="top">
+                        <h3>HyperText Markup Language</h3>
+                        <p>HTML is the backbone of every website on the internet. It's a markup language that defines the structure and content of web pages. Every website you visit - from Google to instagram, from e-commerce stores to online banking portals - is built upon HTML. </p>
+                        <p>At <b>TAP Academy</b>, we believe in learning by doing. Under the guidance of <b>Trainer Harshit Sir</b>, you'll not only understand HTML concepts but also apply them through hands-on projects.</p><br>
+                        <table border="1" width="70%" cellspacing="5" cellpadding="20">
+                            <tr>
+                                <td>✔Semantic Elements</td>
+                                <td>✔Forms & Inputs</td>
+                                <td>✔Tables & Lists</td>
+                                <td>✔Multimedia</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br><br>
+        <hr width="80%">
+        <br><br>
+
+        <!----------Why it matters------>
+        <a name="WhyHtml"></a>
+        <center>
+            <h4>--------WHY IT MATTERS---------</h4>
+            <h1>Importance of HTML in Real World</h1>
+            <table border="1" width="80%" cellpading="20" cellspacing="15">
+                <tr>
+                    <td>
+                       <h1> 🧰</h1><br>
+                        <h3>Gateway to Web Development</h3>
+                        <p>HTML is the first step in every web developer's journey. Whether you want to become a frontend developer - HTML knowledge is essential</p>
+                    </td>
+                    <td align="center" width="33%">
+                        <h1>🌐 </h1><br><br>
+                        <h3>Universal Language of Web</h3>
+                        <p>Every browser in the world understands HTML.
+                        From Chrome to Safari, Firefox to Edge —
+                        HTML is the universal standard.
+                        </p>
+                    </td>
+                    <td align="center" width="33%">
+                <h1>📱</h1> <br><br>
+                <h3>Mobile App Development</h3>
+                <p>
+                    Hybrid mobile apps use HTML concepts.
+                    Learning HTML opens doors to cross-platform
+                    mobile development.
+                </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br><br>
+        <hr width="80%">
+        <br><br>
+
+       <!-------------------Projects----------->
+        <a name="projects"></a>
+        <center>
+            <h4>---------SHOWCASE---------</h4>
+            <h1>My HTML Projects</h1>
+            <p>Explore six amazing projects built with pure HTML. Under the Harshit Sir Guidance</p>
+            <table width="90%" cellpadding="15">
+        <!-- ROW 1 -->
+                <tr>
+                    <td width="33%">
+                        <table border="1" cellpadding="15" width="100%">
+                        <tr><td align="center"><h1>🎥</h1></td></tr>
+                        <tr>
+                            <td>
+                                <h4>PROJECT 01</h4>
+                                <h3>Multimedia Blog</h3>
+                                <p>
+                                    Tags: audio, video, image, poster,
+                                    controls, iframe, list, table
+                                </p>
+                                <a href="./project1/assets/index.html" target="_blank" style="color:lightgreen">→ View Project</a>
+                            </td>
+                        </tr>
+                        </table>
+                    </td>
+
+                <td width="33%">
+                    <table border="1" cellpadding="15" width="100%">
+                        <tr><td align="center"><h1>📄</h1></td></tr>
+                        <tr>
+                            <td>
+                                <h4>PROJECT 02</h4>
+                                <h3>Life & Skills Portfolio</h3>
+                                <p>
+                                Tags: lists, links, div,
+                                semantic tags
+                                </p>
+                                <a href="./Project2/index.html" target="_blank" style="color:lightgreen">→ View Project</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+                <td width="33%">
+                    <table border="1" cellpadding="15" width="100%">
+                        <tr><td align="center"><h1>📅</h1></td></tr>
+                        <tr>
+                            <td>
+                                <h4>PROJECT 03</h4>
+                                <h3>Course Time Table</h3>
+                                <p>
+                                Tags: table, colspan,
+                                rowspan, schedule
+                                </p>
+                                <a href="./Project3/index.html" target="_blank" style="color:lightgreen">→ View Project</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+        <!-- ROW 2 -->
+        <tr>
+            <td>
+                <table border="1" cellpadding="15" width="100%">
+                    <tr><td align="center"><h1>👨‍💻</h1></td></tr>
+                    <tr>
+                        <td>
+                            <h4>PROJECT 04</h4>
+                            <h3>Developer Portfolio</h3>
+                            <p>
+                                Tags: profile, projects,
+                                links, sections
+                            </p>
+                            <a href="./Project4/index.html" target="_blank" style="color:lightgreen">→ View Project</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+
+            <td>
+                <table border="1" cellpadding="15" width="100%">
+                    <tr><td align="center"><h1>📝</h1></td></tr>
+                    <tr>
+                        <td>
+                            <h4>PROJECT 05</h4>
+                            <h3>Registration Form</h3>
+                            <p>
+                                Tags: form, input, label,
+                                select, textarea
+                            </p>
+                            <a href="./Project5/index.html" target="_blank" style="color:lightgreen">→ View Project</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+
+            <td>
+                <table border="1" cellpadding="15" width="100%">
+                    <tr><td align="center"><h1>🌍</h1></td></tr>
+                    <tr>
+                        <td>
+                            <h4>PROJECT 06</h4>
+                            <h3>Travel Guide</h3>
+                            <p>
+                                Tags: images, links,
+                                content sections
+                            </p>
+                            <a href="./Project6/index.html" target="_blank" style="color:lightgreen">→ View Project</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        </table>
+        </center>
+        <br><br><hr width="80%"><br><br>
+        <!--------Trainer------>
+        <a name="trainer"></a>
+        <center>
+            <table border="1" cellpadding="20" cellspacing="15" width="80%">
+                <tr>
+                    <td align="center">
+                        <h1>🏢</h1>
+                        <h2>Trainer Harshit Sir</h2>
+                        <p>With years of experience in web development and teaching, <br>Harshit Sir guides students through practical projects and real-world applications.</p>
+                        <table border="1" width="70%" cellspacing="5" cellpadding="20">
+                            <tr>
+                                <td><h1>500+</h1>
+                                    <h3>Students Trained</h3>
+                                </td>
+                                <td><h1>5+</h1>
+                                    <h3>Years of Experience</h3>
+                                </td>
+                                <td><h1>4.9⭐</h1><h3>Student Rating</h3>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                
+            </table>
+        </center>
+        <br><br><hr width="80%"><br><br>
+        <!---------Website Info-------->
+        <a name="Website"></a>
+        <center>
+            <h1>Ready to Start Your Web Development Journey</h1>
+            <p>Join TAP Academy today and build your first HTML projects under the guidance of Harshit Sir.</p>
+            <a href="#projects" name="projects"><h3>🚀Explore My Projects</h3></a>
+        </center>
+        <br><br><hr width="80%"><br><br>
+        <a href="#Website" name="Website"></a>
+        <center>
+            <h3>---------TAP ACADEMY SHOWCASE---------</h3>
+            <h1>Official TAP Academy Website</h1>
+            <h3>Visit the Official TAP Academy Website explore courses & more:</h3>
+            <iframe src="https://thetapacademy.com/" frameborder="0" width="800" height="400"></iframe>
+        </center>
+        <br><br><hr width="80%"><br><br>
+        <!---------Location---------->
+        <a name="location"></a>
+        <center>
+            <h4>---------FIND US---------</h4>
+            <h1>TAP Academy -- BTM Layout</h1>
+            <p>Come visit us at our TAP Academy center and start your journey to becoming a web developer!</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d31110.73011963178!2d77.60365835!3d12.91792185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3bae3d6411bbb945%3A0x884e5e751a18bc1!2sTAP%20ACADEMY%20BTM%2C%204%2C%20Outer%20Ring%20Rd%2C%20near%20McDonald&#39;s%2C%20BTM%202nd%20Stage%2C%20Kuvempu%20Nagar%2C%20Stage%202%2C%20BTM%20Layout%2C%20Bengaluru%2C%20Karnataka%20560076!3m2!1d12.916314499999999!2d77.6106318!5e0!3m2!1sen!2sin!4v1769712488716!5m2!1sen!2sin" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </center>
+        <br><br><hr width="80%"><br><br>
+        <!---------Contact---------->
+        <a name="contact"></a>
+        <center>
+            <h4>---------GET IN TOUCH---------</h4>
+            <h1>Contact TAP Academy</h1>
+            <p>Have questions or want to learn more? Reach out to us!</p>
+            <form action="">
+                <table border="1" cellpadding="20" cellspacing="10">
+                    <tr>
+                        <td>
+                            <label for="name">Name :</label>
+                            <input type="text" required>
+                        </td>
+                        <td>
+                            <label for="email">Email :</label>
+                            <input type="email" required>
+                        </td>
+                         <td>
+                            <label for="message">Message :</label>
+                            <textarea required id="message" rows="4" cols="50"></textarea>
+                         </td>
+                    </tr>
+                    
+                </table>
+                <input type="submit">
+            </form>
+             <br><br><hr width="80%"><br><br>
+            <footer fixed="bottom" style="text-align: center;">
+                <p>© 2024 TAP Academy. All rights reserved.</p>
+            </footer>
+
+     <br><br><br><br><br>
+</body>
+</html>
